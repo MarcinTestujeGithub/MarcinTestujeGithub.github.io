@@ -1,19 +1,22 @@
+/* Stylizacja dla trybu dziennego */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #f0f0f0; /* Jasny kolor tła */
+  color: #333; /* Ciemniejszy kolor tekstu */
 }
 
 header {
-  background-color: #333;
+  background-color: #007bff; /* Jasno niebieski kolor tła nagłówka */
   color: #fff;
   padding: 1rem;
   text-align: center;
 }
 
 nav {
-  background-color: #444;
+  background-color: #0056b3; /* Ciemniejszy niebieski kolor tła nawigacji */
   padding: 0.5rem;
   text-align: center;
 }
@@ -30,8 +33,34 @@ section {
 }
 
 footer {
-  background-color: #333;
+  background-color: #007bff; /* Jasno niebieski kolor tła stopki */
   color: #fff;
   padding: 1rem;
   text-align: center;
+}
+
+/* Stylizacja dla trybu nocnego */
+body.night-mode {
+  background-color: #1a1a1a; /* Ciemny kolor tła w trybie nocnym */
+  color: #fff; /* Kolor tekstu w trybie nocnym */
+}
+
+body.night-mode header {
+  background-color: #444; /* Ciemniejszy kolor tła nagłówka w trybie nocnym */
+}
+
+body.night-mode nav {
+  background-color: #333; /* Ciemny kolor tła nawigacji w trybie nocnym */
+}
+
+body.night-mode nav a {
+  color: #fff; /* Kolor tekstu nawigacji w trybie nocnym */
+}
+
+body.night-mode section {
+  background-color: #333; /* Ciemny kolor tła sekcji w trybie nocnym */
+}
+
+body.night-mode footer {
+  background-color: #444; /* Ciemniejszy kolor tła stopki w trybie nocnym */
 }
